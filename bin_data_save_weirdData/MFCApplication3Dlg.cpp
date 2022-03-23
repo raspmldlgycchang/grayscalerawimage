@@ -108,7 +108,7 @@ BOOL CMFCApplication3Dlg::OnInitDialog()
 
 	mdcOffScreen.CreateCompatibleDC(p_dc);
 	
-	CString defaultPath = "C:\\Users\\홍성희\\Desktop\\kykim\\Programming\\이미지뷰어만들기2주차목요일\\picSpace1\\universe.bmp";
+	CString defaultPath = "비트맵파일";
 	if (bmpFilePath.IsEmpty())
 		bmpFilePath = defaultPath;
 
@@ -229,7 +229,7 @@ void CMFCApplication3Dlg::OnBnClickedButton1()
 	wchar_t temp[24];
 	int line = 1;
 	CString str;
-	bmpFilePath = L"C:\\Study\\MFCApplication4\\MFCApplication4\\MFCApplication4Dlg.cpp";
+	bmpFilePath = L"cpp";
 	if (0 == fopen_s(&p_file, bmpFilePath, "wb")) {
 		while (length == 24) {
 			total_str = "";//total_str.Empty();
