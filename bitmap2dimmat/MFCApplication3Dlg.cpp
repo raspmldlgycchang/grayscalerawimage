@@ -101,7 +101,7 @@ BOOL CMFCApplication3Dlg::OnInitDialog()
 
 	CClientDC dc(this);
 	mdcOffScreen.CreateCompatibleDC(&dc);
-	CString defaultPath = "C:\\Users\\홍성희\\Desktop\\kykim\\Programming\\이미지뷰어만들기2주차목요일\\picSpace1\\universe.bmp";
+	CString defaultPath = "비트맵파일";
 	if (bmpFilePath.IsEmpty())
 		bmpFilePath = defaultPath;
 	hBmp = LoadImage(NULL, bmpFilePath, IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE | LR_CREATEDIBSECTION);
